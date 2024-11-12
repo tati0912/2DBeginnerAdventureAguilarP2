@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class DuckoController : MonoBehaviour
 {
     public float speed = 4.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -23,6 +22,6 @@ public class PlayerController : MonoBehaviour
         position.x = position.x + speed * horizontal * Time.deltaTime;
         position.y = position.y + speed * vertical * Time.deltaTime;
 
-        transform.position = position; 
+        transform.position = position;
     }
 }
