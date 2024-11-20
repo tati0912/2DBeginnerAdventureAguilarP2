@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class DuckoController : MonoBehaviour
 {
+    public float speed = 3.0f;
+    public int maxHealth = 5;
+    int currentHealth;
+
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
@@ -12,13 +16,15 @@ public class DuckoController : MonoBehaviour
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+        currentHealth = 1;
     }
 
     // Update is called once per frame
     private void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
     }
 
 
@@ -32,5 +38,10 @@ public class DuckoController : MonoBehaviour
         position.y = position.y + 3.0f * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
+    }
+    public void ChangeHealth(int amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
     }
 }
