@@ -62,9 +62,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3053297656503703072, guid: 457483ed883c6fe46a60c020abf504d3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8554273084152415019}
-    - targetCorrespondingSourceObject: {fileID: 3053297656503703072, guid: 457483ed883c6fe46a60c020abf504d3, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6343812287033763712}
     - targetCorrespondingSourceObject: {fileID: 3053297656503703072, guid: 457483ed883c6fe46a60c020abf504d3, type: 3}
       insertIndex: -1
@@ -75,19 +72,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3053297656503703072, guid: 457483ed883c6fe46a60c020abf504d3, type: 3}
   m_PrefabInstance: {fileID: 2760035216664236683}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8554273084152415019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870007690795451563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7048a2de56ca9554aa6c231670c7f78e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
 --- !u!50 &6343812287033763712
 Rigidbody2D:
   serializedVersion: 4

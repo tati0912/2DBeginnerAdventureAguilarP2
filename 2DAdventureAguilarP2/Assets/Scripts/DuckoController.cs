@@ -6,6 +6,7 @@ public class DuckoController : MonoBehaviour
 {
     public float speed = 3.0f;
     public int maxHealth = 5;
+    public int health { get { return currentHealth; } }
     int currentHealth;
 
     Rigidbody2D rigidbody2d;
